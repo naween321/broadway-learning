@@ -88,6 +88,8 @@ git config --global user.name "username" # set git username
 git config --global user.email "email" # set git user email
 
 
+git branch -d <branch_name>
+
 
 
 
