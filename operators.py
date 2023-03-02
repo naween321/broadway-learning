@@ -71,35 +71,3 @@ print("Hello World")
 
 
 
-
-git init
-git add .  # instead of '.' we can also use "--all" or <filenames>
-git commit -m "message"  # -m is a message flag
-git push -u origin <branch_name>   # -u is a flag saying upstream
-
-
-Created a GitHub Repo
-git remote add origin <ssh-link>
-
-
-ssh-keygen -t ed25519 -C "your@email.address" # Created SSH key in local
-
-git config --global user.name "username" # set git username
-git config --global user.email "email" # set git user email
-
-git branch -d <branch_name>>>
-
-
-git branch # displays all the branches in the git repo
-git branch <branch_name> # creates a new branch
-git checkout <branch_name>  # takes the project to next branch
-git checkout -b <branch_name> # creates a new branch and jumps to that branch
-git merge <branch_name>
-git pull origin <branch_name>
-
-
-
-
-
-
-
