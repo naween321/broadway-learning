@@ -7,4 +7,3 @@ def join_str(a):
 
 
 r = join_str("Python + is + an + awesome + language")
-print(r)
