@@ -5,9 +5,18 @@ def decorate_me(func):
     return inner_func
 
 
+@decorate_me
 def summ(a, b):
     return a + b
 
+@decorate_me
+def diff(a, b):
+    return a - b
 
-decorated = decorate_me(summ)
-print(decorated(2, 3))
+print(summ(5, 4))
+print(diff(5, 4))
+
+
+
+# decorated = decorate_me(summ)
+# print(decorated(2, 3))
