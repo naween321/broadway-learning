@@ -8,11 +8,16 @@
 #     return inner_func
 #
 #
-# @decorate_me
+# # @decorate_me
 # def addition(a, b, c):
 #     return a + b + c
 #
 #
+# addition = decorate_me(addition)
+#
+# print(addition(1, 2, 3))
+#
+# #
 # # addition = decorate_me(addition)
 #
 # # start = time.time()
@@ -20,25 +25,33 @@
 # # end = time.time()
 # # print(f"Total function execution time is {end-start}")
 import time
+#
+#
+# def execution_time(func):
+#     def inner_func(*args, **kwargs):
+#         start = time.time()
+#         r = func(*args, **kwargs)
+#         end = time.time()
+#         print(f"The function execution time is {end-start}")
+#         return r
+#     return inner_func
 
 
-def execution_time(func):
-    def inner_func(*args, **kwargs):
-        start = time.time()
-        r = func(*args, **kwargs)
-        end = time.time()
-        print(f"The function execution time is {end-start}")
-        return r
-    return inner_func
+
+def password_required(func):
+    def inner_function(*args, **kwargs):
+        password = input("Enter the password ")
+        if password == '1234':
+            return func(*args, **kwargs)
+        else:
+            return "You dont have access"
+    return inner_function
 
 
-@execution_time
+@password_required
 def message_print():
-    time.sleep(5)
-    # for i in range(1000000000):
-    #     pass
-    print("Hello World")
+    return "Hello World"
 
 
 # message_print = execution_time(message_print)
-message_print()
+print(message_print())
