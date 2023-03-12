@@ -12,6 +12,7 @@ class B:
         return "I am message from class B"
 
 
+
 """
 This is multiple inheritance
 """
