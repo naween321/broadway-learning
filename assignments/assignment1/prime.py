@@ -1,4 +1,9 @@
-n = int(input("Enter a number "))  # 12
+try:
+    n = int(input("Enter a number "))  # 12
+except ValueError:
+    print("You cannot enter a string")
+    n = 1
+
 summ = 0
 for i in range(1, n+1):
     if n % i == 0:
@@ -8,3 +13,6 @@ for i in range(1, n+1):
         break
 else:
     print(f"{n} is a prime number")
+
+
+A = 1
