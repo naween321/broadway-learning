@@ -27,15 +27,16 @@
 import time
 #
 #
-# def execution_time(func):
-#     def inner_func(*args, **kwargs):
-#         start = time.time()
-#         r = func(*args, **kwargs)
-#         end = time.time()
-#         print(f"The function execution time is {end-start}")
-#         return r
-#     return inner_func
 
+
+def execution_time(func):
+    def inner_func(*args, **kwargs):
+        start = time.time()
+        r = func(*args, **kwargs)
+        end = time.time()
+        print(f"The function execution time is {end-start}")
+        return r
+    return inner_func
 
 
 def password_required(func):
