@@ -4,7 +4,7 @@ from password_decorator import password_required
 filename = 'students.json'
 
 
-@password_required
+# @password_require
 def create():
     id = input("Enter id of the student ")
     name = input("Enter name of the student ")
