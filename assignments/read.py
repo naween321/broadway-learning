@@ -9,6 +9,4 @@ def read(id):
     student = list(filter(lambda x: x['id'] == id, students))
     print(student)
     cont = input("Do you want you want to continue? ")
-    if cont.lower() == 'y':
-        return True
-    return False
+    return cont.lower() == 'y'
