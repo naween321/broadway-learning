@@ -8,5 +8,5 @@ def read(id):
         students = json.loads(students)
     student = list(filter(lambda x: x['id'] == id, students))
     print(student)
-    cont = input("Do you want you want to continue? ")
+    cont = input("Do you want  to continue? ")
     return cont.lower() == 'y'
