@@ -29,3 +29,4 @@ class C(A, B):
 
 obj = C()
 print(obj.first())
+print(C.mro())
