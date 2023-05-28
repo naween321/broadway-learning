@@ -2,8 +2,8 @@ class Circle:
     def __init__(self, radius):
         self.radius = radius
 
-    # def __gt__(self, other):
-    #     return self.radius > other.radius
+    def __gt__(self, other):
+        return self.radius > other.radius
 
     def __str__(self):
         return f"Circle object with radius {self.radius}"
